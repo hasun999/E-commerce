@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.logo {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 1000;
+    color: rgb(75, 8, 138);
+    transition: color 0.15s;
+    animation-name: colorChange;
+    animation-duration: 8s;
+
+}
+
+@keyframes colorChange {
+
+    25%   {color: rgba(255, 0, 170, 0.986);}
+    50%    {color: rgba(255, 0, 0, 0.986);}
+    75%    {color: rgb(12, 138, 8);}
+    100%    {color: rgb(3, 51, 211);}
+}
+
+.logo:hover {
+    color: black;
+}
+
+.header .middle-section .menu-list {
+    list-style: none;
+    margin-top: 0;
+}
+
+.header .middle-section .menu-list li {
+    position: relative;
+    float: left;
+}
+
+.header .middle-section .menu-list li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    margin: 0 5px;
+    transition: color 0.15s;
+}
+
+.header .middle-section .menu-list li a:hover {
+    color: rgb(75, 8, 138);
+}
